@@ -1,53 +1,56 @@
 {
   "name": "ahj-testing",
   "version": "1.0.0",
-  "description": "ajs_diploma",
+  "description": "Credit Card Validator",
   "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode development",
+   "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
     "test": "jest",
     "coverage": "jest --coverage",
+    "doc": "jsdoc -c jsdoc.conf.json",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
+    "preshow:doc": "npm run doc",
+    "show:doc": "live-server doc",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
+"author": "svg",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sergey17777/AHJ-testing.git"
   },
-
+  
   "bugs": {
     "url": "https://github.com/Sergey17777/AHJ-testing/issues"
   },
   "homepage": "https://github.com/Sergey17777/AHJ-testing#readme"
-},
- "author": "svg",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.11.5",
-    "@babel/core": "^7.11.5",
-    "@babel/preset-env": "^7.11.5",
-    "babel-jest": "^25.5.1",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.6.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "favicons-webpack-plugin": "^4.2.0",
-    "html-loader": "^1.3.0",
-    "html-webpack-plugin": "^4.4.1",
-    "jest": "^25.5.4",
+};
+"devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-jest": "^28.1.2",
+    "babel-loader": "^8.2.5",
+    "core-js": "3",
+    "css-loader": "^6.7.1",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-loader": "^3.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.2",
     "live-server": "^1.2.1",
-    "mini-css-extract-plugin": "^0.9.0",
-    "url-loader": "^4.1.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "mini-css-extract-plugin": "^2.6.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "terser-webpack-plugin": "^5.0.3",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^4.9.3",
+    "webpack-merge": "^5.8.0"
   },
-  "dependencies": {
-    "core-js": "^3.6.5"
-  }
+  "dependencies": {}
 }
