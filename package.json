@@ -28,7 +28,6 @@
     "url": "https://github.com/Sergey17777/AHJ-testing/issues"
   },
   "homepage": "https://github.com/Sergey17777/AHJ-testing#readme"
-};
 "devDependencies": {
     "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.6",
